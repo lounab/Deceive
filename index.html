@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deceive</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css?v=<?php echo rand(0, 100000); ?>"> <!--pour forcer le rehargement-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8" />
+</head>
+<body>
+
+	<!--playsinline fait pour iOS
+	//autoplay redémarrage auto de la vidéo
+	//mute être sur qu'il ny aur aucun son
+	//loop fait une boucle
+	//poster image secours si la vidéo ne charge pas -->
+	<video playsinline autoplay muted loop poster="fond/capture.jpg" id="bgvid">
+		<source src="fond/fond_particule.webm" type="video/webm"></source>
+		<source src="fond/fond_particule.mp4" type="video/mp4"></source>
+	</video>
+
+	<header >
+		<nav role="navigation">
+
+			<div id="deceive">
+				<img src="img/deceive.png">
+			</div>
+
+			<div class="viewport_header">
+				<!--<h1>face 2 face</h1>-->
+				<img src="img/clin_oeil.gif">
+			</div>
+
+			<div id="menuToggle">
+				<!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+				<input type="checkbox" />
+
+				<!--Some spans to act as a hamburger.-->
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
+				<ul id="menu">
+					<li><a href="#concept">CONCEPT</a></li>
+					<li><a href="#jeu">JEU</a></li>
+					<li><a href="#equipe">EQUIPE</a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+		
+
+
+	</header>
+
+
+
+
+	<div class="grid-container">
+
+		<div class="item0">
+			<p>
+				<span id="bigo"><b>"Sur internet, là ou n’importe qui peut dire ce qui lui chante sous couvert d’anonymat, l’Homme se lâche, et le devient."</b><br/><span id="signature">Deceive</span><br/><br/></span>
+				Quand les filtres tombent et que les masques s’endossent, les langues se délient et l'oppression peut surgir. Charlie, une adolescente comme les autres, va payer le prix de cet anonymat au centuple. <br/>
+				Qui est “@totheark”, la personne se cachant derrière ce pseudo sinistre ? <br/>
+				Comment se fait-il qu’elle sache autant de détails sur la vie de Charlie ? Et pourquoi s’applique-t-elle autant à incendier cette dernière sur les réseaux.
+			</p>
+			
+		</div>
+
+
+
+
+		<div class="item1" id="concept">
+			<h1>NOTRE CONCEPT</h1>
+			<div class="flex-container">
+				<div id="phone">
+					<img src="img/tel3.gif">
+				</div>
+				<div id="text1">
+					<p>
+						Face 2 Face est une fiction interactive ayant pour but de sensibiliser le grand public, en partenariat avec  l’association “Marion La Main Tendue”. Des témoignages de personnes ayant vécu ainsi que fait subir  le cyberharcèlement sont visionnables dans l’application.<br/><br/><br/>
+					</p>
+				</div>
+			</div>
+			<div id="text2">
+				<p>
+					À travers <em>Face 2 Face</em>, l’avenir de Charlie est entre vos mains. Chacun des choix formulés par le joueur auront de réelles conséquences sur la suite de l’histoire. Il vous faudra faire preuve de perspicacité afin de trouver la véritable identité de @totheark et faire cesser cette situation insoutenable.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="item2">
+			<div>
+				<img src="img/perso1.png">
+				<p>
+					<b>Charlie</b><br/><br/>
+
+					Sincère et spontanée, Charlie n’a pas sa langue dans la poche, sa personnalité rayonnante ainsi que son dynamisme sont appréciés par son entourage.  <br/>
+					A contrario, Charlie demeure assez réservée, elle ne se livre qu'à des personnes en qui elle a réellement confiance. <br/>
+					C’est pour cette raison que pour Charlie, son entourage proche est plus précieux que tout l’or du monde. <br/>
+					L’aspect "tête de mule” de Charlie ainsi que son fort caractère n’est pas du goût de tout le monde, mais cette dernière ne porte pas grand intérêt à ce qui dépasse son groupe d’amis, après tout jusqu’ici, tout s’était bien passé…
+				</p>
+			</div>
+
+			<div id="inverse">
+				<img src="img/mec.png">
+				<p>
+					<b>@totheark</b><br/><br/>
+
+					Véritable bourreau masqué, Charlie ne sait rien de son harceleur si ce n’est son pseudo : @totheark.<br/>
+					De nombreux aspects sont déconcertants à propos de ce dernier. Quelles sont ses motivations ? Quel lien entretient il avec Charlie ? Et par quel moyen est-il au courant des zones d’ombres de cette dernière ? <br/>
+					Son air impassible ainsi que son acharnement maladif à trouver tous les moyens afin de blesser Charlie le rendent très impressionnant à ses yeux.<br/>
+					Elle devra surmonter la peur qu’il lui insuffle afin de mettre un terme au piège que @totheark lui a tendu.
+				</p>
+			</div>
+		</div>
+
+
+
+		<div class="item3" id="equipe">
+			<h1>
+				<div>NOTRE EQUIPE</div>
+			</h1>
+
+			<div class="team">
+				<div>
+					<img src="img/arthur.png">
+					<p>Arthur fait partie de l’équipe sound design. Il fait également partie de l'équipe écriture</p>
+				</div>
+				<div>
+					<img src="img/jade.png">
+					<p>Jade s’occupe de la communication. Elle fait partie de l'équipe d’écriture ainsi que de graphisme</p>
+				</div>
+				<div>
+					<img src="img/louis.png">
+					<p>Louis est chargé de l’élaboration du sound design du jeu, il fait également partie de l’équipe de programmation</p>
+				</div>
+				<div>
+					<img src="img/louise.png">
+					<p>Louise, élabore les graphismes de Face 2 Face ainsi que du site internet. Elle fait également partie de l'équipe d’écriture du scénario du jeu</p>
+				</div>
+				<div>
+					<img src="img/louna.png">
+					<p>Louna développe et programme le jeu Face 2 Face, elle participe également à la communication de ce dernier</p>
+				</div>
+				<div>
+					<img src="img/martin.png">
+					<p>Martin, chef du projet Face 2 Face, gère l’organisation ainsi que le bon déroulement du projet. Il s’occupe également de la partie juridique</p>
+				</div>
+				<div>
+					<img src="img/valentin.png">
+					<p>Valentin est chargé du design du logo Face 2 Face ainsi que de certains éléments du jeu</p><br/>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="item4" id="jeu">
+			<img src="img/affiche.png">
+			<div id="telecharge">
+				<p>télécharger le jeu<p>
+					<a href="../F2F/page0.php">
+						<img src="img/telechargement.png">
+					</a>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+		<footer>
+			<p>Retrouvez nous aussi sur : </p>
+			<div class="socio">
+				<div><a href="https://www.instagram.com/deceive_agency/?hl=fr" target="_blank"><img src="img/logoinsta.png"></a></div>
+				<div><a href="https://twitter.com/deceive_agency" target="_blank"><img src="img/logotwitter.png"></a></div>
+			</div>
+		</footer>
+
+
+
+	</body>
+	</html>
+
